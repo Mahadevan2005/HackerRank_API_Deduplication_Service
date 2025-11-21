@@ -151,7 +151,7 @@
 
 ## Validation Rules
 
-| Field | Rule | Error Message |
+| Field | Rule | Error Message (Not checked) |
 |-------|------|---------------|
 | `requestId` | Not null, not empty, not whitespace-only | "Invalid request ID" |
 | `amount` | Positive number (> 0) | "Invalid amount" |
@@ -179,4 +179,4 @@
 | Thread Safety | 20 | TC-06 passes with proper synchronization |
 | Code Quality | 15 | Clean code, error handling, TC-10 passes |
 
-**Total:** 100 points | **Pass:** 70+ | **Excellent:** 90+
+**Total:** 100 points

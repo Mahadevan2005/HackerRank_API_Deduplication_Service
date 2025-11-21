@@ -30,6 +30,11 @@ The application should adhere to the following API format and response codes in 
 - After 5 minutes have passed, a transaction with the same `requestId` should be treated as a new request.
 - The implementation must handle concurrent requests safely.
 
+- **Note:**  
+The `message` field in the response is informational only.  
+The evaluation will NOT check the content of `message`.  
+Only `status`, `transactionId`, and `HTTP status code` will be validated.
+
 **Implementation Requirements**:
 - Complete the `processTransaction()` method in `TransactionService`.
 - Use appropriate data structures for efficient duplicate detection.
@@ -42,6 +47,11 @@ growth of stored request records. (lazy cleanup during request processing or sch
 - `requestId`: Must not be null, empty, or whitespace-only
 - `amount`: Must be positive (greater than 0)
 - `timestamp`: Must not be null and should be within a reasonable range (not far future)
+
+**Constraints**:
+- 1 ≤ number of requests ≤ 10^5
+- timestamp is provided in milliseconds
+- requestId length ≤ 100 characters
 
 **Time Window**: 
 - 5 minutes (300,000 milliseconds)

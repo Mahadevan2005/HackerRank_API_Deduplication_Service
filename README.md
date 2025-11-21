@@ -16,7 +16,7 @@ This is the problem statement for HackerRank's content library addressing **API 
 ```
 ├── README.md                    # Submission overview
 ├── ProblemStatement.md          # Candidate-facing problem
-└── TestCaseDocumentation.md     # Test specification
+└── TestCaseDocumentation.md     # Test specification for backend evaluation
 ```
 
 ---
@@ -72,7 +72,7 @@ Built with three stakeholders in mind:
 
 **Variations:** Redis-based deduplication, rate limiting, webhook idempotency  
 **Difficulty Levels:** Easy (basic), Medium (current), Hard (distributed systems)  
-**Extensions:** Observability, database persistence, cleanup job implementation
+**Extensions:** Redis, rate limiting, observability
 
 ---
 
@@ -83,12 +83,5 @@ Built with three stakeholders in mind:
 - **Production-ready:** Can be deployed to content library
 
 ---
-
-## Submission Details
-
-**Candidate:** Mahadevan M  
-**Role:** Technical Content Engineer Intern  
-**Interviewer:** Arihant Jain
-
----
-*Designed for clarity, candidate experience, and scalability.*
+- *Refer `ProblemStatement.md` for Question statement.*
+- *Refer `TestCaseDocumentation.md` for Tests coverage.*
